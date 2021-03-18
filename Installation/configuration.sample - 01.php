@@ -54,15 +54,7 @@ date_default_timezone_set('America/Sao_Paulo');
  * Defines how to access Clubdata via the Browser.
  * LINKROOT is the directory relativ to your home directory of your homepage and should start with a slash (or backslash on Windows systems)
  */
-define("LINKROOT", "/clubdata");
-
-/**
- * Defines Path BACKUPDIR directory
- *
- * If you don't have the following directory existing, you have to create it!
- * The paths here are valid for the complete installation of Clubdata
-  */
-define("BACKUPDIR", "{$_SERVER['DOCUMENT_ROOT']}" . LINKROOT . "/backups");
+define("LINKROOT", "/");
 
 /**
  * Defines Path ADODB library
@@ -73,7 +65,7 @@ define("BACKUPDIR", "{$_SERVER['DOCUMENT_ROOT']}" . LINKROOT . "/backups");
  * (the tools are installed in the subdirectoy Tools)<BR>
  * The directories MUST end by a slash !!
  */
-define("ADODB_DIR", "{$_SERVER['DOCUMENT_ROOT']}" . LINKROOT . "/vendor/adodb/adodb-php");
+define("ADODB_DIR", "{$_SERVER['DOCUMENT_ROOT']}/vendor/adodb/adodb-php");
 
 /**
  * Defines Path PHP2EXCEL library
@@ -84,7 +76,7 @@ define("ADODB_DIR", "{$_SERVER['DOCUMENT_ROOT']}" . LINKROOT . "/vendor/adodb/ad
  * (the tools are installed in the subdirectoy Tools)<BR>
  * The directories MUST end by a slash !!
  */
-define("PHP2EXCEL_DIR", "{$_SERVER['DOCUMENT_ROOT']}" . LINKROOT . "/Tools/php2excel/");
+define("PHP2EXCEL_DIR", "{$_SERVER['DOCUMENT_ROOT']}/Tools/php2excel/");
 
 /**
  * Defines Path SMARTY library
@@ -95,7 +87,7 @@ define("PHP2EXCEL_DIR", "{$_SERVER['DOCUMENT_ROOT']}" . LINKROOT . "/Tools/php2e
  * (the tools are installed in the subdirectoy Tools)<BR>
  * The directories MUST end by a slash !!
  */
-define("SMARTY_DIR", "{$_SERVER['DOCUMENT_ROOT']}" . LINKROOT . "/vendor/smarty/smarty/libs/");
+define("SMARTY_DIR", "{$_SERVER['DOCUMENT_ROOT']}/vendor/smarty/smarty/libs/");
 
 /**
  * Defines Path FORMSGENERATION library
@@ -106,7 +98,7 @@ define("SMARTY_DIR", "{$_SERVER['DOCUMENT_ROOT']}" . LINKROOT . "/vendor/smarty/
  * (the tools are installed in the subdirectoy Tools)<BR>
  * The directories MUST end by a slash !!
  */
-define("FORMSGENERATION_DIR", "{$_SERVER['DOCUMENT_ROOT']}" . LINKROOT . "/vendor/phpclasses/formsgeneration/");
+define("FORMSGENERATION_DIR", "{$_SERVER['DOCUMENT_ROOT']}/vendor/phpclasses/formsgeneration/");
 
 /**
  * Name of index.php file.
@@ -231,7 +223,7 @@ define("SQLDEBUG", true);
 /**
  * Constant, defining Name of debugging file
  */
-define("DEBUGFILE", "{$_SERVER['DOCUMENT_ROOT']}" . LINKROOT . "/tmp/clubdata.log");
+define("DEBUGFILE", "{$_SERVER['DOCUMENT_ROOT']}/Clubdata2/tmp/clubdata.log");
 
 /**
  * Constant, defining debugging of Smarty (true or false)
